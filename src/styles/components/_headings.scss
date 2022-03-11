@@ -1,0 +1,15 @@
+.heading {
+    color: $primary;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+
+.main-heading {
+    margin-bottom: 30px;
+    font-size: 32px;
+    
+    @include media-up(m) {
+        font-size: 64px;
+    }
+}

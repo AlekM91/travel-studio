@@ -1,0 +1,98 @@
+// Footer
+.site-footer {
+    margin-top: 200px;
+
+    .subscribe {
+
+        .heading {
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+
+            input {
+                border-radius: 10px;
+                padding: 12px 25px;
+                margin-right: -91px;
+                flex: 1;
+            }
+
+            .button {
+                border-radius: 10px;
+                align-self: center;
+            }
+        }
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-inner {
+       
+        @include media-up(m) {
+            display: flex;
+ 
+            .contact {
+                text-align: right;
+     
+                p {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        @include media-up(l) {
+
+            &>div {
+                flex-basis: 100%;
+            }
+
+            .subscribe {
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .footer-nav {
+                display: block;
+
+                .nav {
+                    display : flex;
+                    flex-direction: column;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    li {
+
+                        a {
+                            padding: 15px;
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .social {
+                        
+                      
+
+                        img {
+                            &:first-child {
+                                margin-right: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        p {
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.gallery-text {
+    @include media-up(l) {
+        display: flex;
+
+        .gallery,
+        .text {
+            display: flex;
+            flex-basis: 100%;
+            height: 500px;
+        }
+
+        .gallery {
+
+            .img-gallery {
+                width: 100%;
+            }
+        }
+    }
+}

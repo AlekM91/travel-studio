@@ -1,0 +1,12 @@
+.section-2 {
+
+    .text-content {
+        text-align: center;
+        
+        @include media-up(l) {
+            text-align: right;
+            padding-left: 50px;
+            align-self: center;
+        }
+    }
+}

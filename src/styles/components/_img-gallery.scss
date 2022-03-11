@@ -1,0 +1,71 @@
+.img-gallery {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        margin-bottom: 20px;
+
+        border-radius: 20px;
+        box-shadow: 3px 3px 2px $secondary;
+    }
+
+    @include media-up(s) {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            flex: 1;
+            
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    @include media-up(l) {
+        display: block;
+        position: relative;
+        transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        img {
+            width: auto;
+            position: absolute;
+            transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:first-child {
+                top: 0;
+                z-index: 2;
+            }
+
+            &:nth-child(2) {
+                top: -7%;
+                right: -10%;
+                z-index: 1;
+            }
+
+            &:last-child {
+                bottom: -4%;
+                left: 25%;
+                z-index: 3;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                z-index: 5;
+            }
+        }
+    }
+
+    @include media-up(xl) {
+        img {
+
+            &:nth-child(2) {
+                top: -7%;
+                right: 10%;
+                z-index: 1;
+            }
+        }
+    }
+}
