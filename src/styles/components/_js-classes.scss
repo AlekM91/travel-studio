@@ -1,0 +1,26 @@
+.js-no-scroll {
+    overflow: hidden;
+}
+
+.js-background {
+    background: red;
+}
+
+.js-fade {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:     .500s linear;
+
+    &.js-appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.js-header {
+    background: $primary;
+   
+    a {
+        color: $tertiary
+    }
+}

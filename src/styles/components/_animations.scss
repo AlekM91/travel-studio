@@ -1,0 +1,17 @@
+@keyframes hamburger-down {
+    50% {
+        transform:translate(0px, 7px);
+    }
+    100% {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+}
+
+@keyframes hamburger-up {
+    50% {
+        transform:translate(0px, -7px);
+    }
+    100% {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}

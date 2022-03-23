@@ -14,6 +14,16 @@
         font-size: 24px;
         color: $secondary;
     }
+
+    .hamburger {
+        display: none;
+    }
     
-    
+    @include media-down(s) {
+        padding: 10px 0;
+
+        .hamburger {
+            display: flex;
+        }
+    }
 }

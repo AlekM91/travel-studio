@@ -1,5 +1,6 @@
 .section-4 {
-    margin-top: 300px;
+    scroll-margin-top: 150px;
+    margin-top: 150px;
 
     .text-content {
         padding: 20px 20px 20px 0;
@@ -28,6 +29,8 @@
     }
 
     @include media-up(l) {
+        margin-top: 300px;
+
         img {
             &:first-child {
                 top: 20%;
@@ -50,6 +53,7 @@
 
     @include media-up(xl) {
         img {
+
             &:first-child {
                 top: 20%;
                 left: 10%;

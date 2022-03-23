@@ -5,4 +5,16 @@
     color: $tertiary;
     letter-spacing: 0.3px;
     font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.button-outline {
+    
+    &:hover {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+    }
 }

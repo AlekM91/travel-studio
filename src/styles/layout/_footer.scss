@@ -68,6 +68,10 @@
 
                     li {
 
+                        &:before {
+                            background: $primary;
+                        }
+
                         a {
                             padding: 15px;
                             display: inline-block;
@@ -77,11 +81,15 @@
 
                     .social {
                         
-                      
-
                         img {
+
                             &:first-child {
                                 margin-right: 17px;
+
+                            }
+                            
+                            &:hover {
+                                cursor: pointer;
                             }
                         }
                     }
